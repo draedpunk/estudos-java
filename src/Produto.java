@@ -2,7 +2,9 @@ public class Produto {
     private int codigo;
     private String nome;
 
-    public Produto(){
+    public Produto(int cod, String n){
+        codigo = cod;
+        nome = n;
     }
 
     int getCodigo(){
