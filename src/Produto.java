@@ -3,8 +3,8 @@ public class Produto {
     private String nome;
 
     public Produto(int cod, String n){
-        codigo = cod;
-        nome = n;
+        this.codigo = cod;
+        this.nome = n;
     }
 
     int getCodigo(){
