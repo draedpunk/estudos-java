@@ -14,9 +14,6 @@ public class Pedidos {
     public String getNome(){
         return nome;
     }
-    public void setNome(String n){
-        nome = n;
-    }
 
     public int getCod(){
         return cod;
