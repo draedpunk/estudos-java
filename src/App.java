@@ -1,6 +1,6 @@
 
-import entities.Circulo;
 import entities.Cliente;
+import entities.Pedidos;
 import entities.Produto;
 
 public class App {
@@ -15,8 +15,14 @@ public class App {
         // System.out.println("Código: " + p1.getCodigo());
         // System.out.println("Nome: " + p1.getNome());
 
-        Circulo cir = new Circulo();
-        cir.setRaio(4.5);
-        System.out.println(cir.toString());
+        // Circulo cir = new Circulo();
+        // cir.setRaio(4.5);
+        // System.out.println(cir.toString());
+
+        Pedidos p = new Pedidos(1, "Tinta", 50.00);
+        System.out.println("------- Dados do pedido --------");
+        System.out.println("Codigo do pedido: " + p.getCod());
+        System.out.println("Nome do produto: " + p.getNome());
+        System.out.println("Total do pedido: R$ " + p.getTotal());
     }
 }
