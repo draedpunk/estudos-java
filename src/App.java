@@ -1,4 +1,4 @@
-
+import entities.Triangulo;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -15,7 +15,7 @@ public class App {
         // Circulo cir = new Circulo();
         // cir.setRaio(4.5);
         // System.out.println(cir.toString());
-/* 
+        /* 
 
         Pedidos p = new Pedidos(1, "Tinta", 50.00);
         System.out.println("------- Dados do pedido --------");
@@ -24,32 +24,16 @@ public class App {
         System.out.println("Total do pedido: R$ " + p.getTotal());
         */
 
+        Triangulo t = new Triangulo();
+        double a1 = t.getAreaBaseAltura(8.0, 67.0);
+        System.out.println("Área (base x altura): " + a1);
 
+        double area2 = t.getAreaLados(7, 8, 9);
+        System.out.println("Área (3 lados): " + area2);
 
+        double area3 = t.getAreaAngulo(6, 7, Math.PI/3);
+        System.out.println("Área (2 lados + ângulo): " + area3);
 
-
-
-
-
-
-
-
-
-        Neta n = new Neta();
     }
-}
-class Neta extends Filha {
-    public Neta() {
-        System.out.println("rodando o construtor da classe Neta");
-    }   
-}
-class Filha extends Mae {
-    public Filha() {
-        System.out.println("rodando o construtor da classe Filha");
-    }   
-}
-class Mae {
-    public Mae() {
-        System.out.println("rodando o construtor da classe Mãe");
-    }   
+
 }
