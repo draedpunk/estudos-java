@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
-import entities.Calculadora;
-import entities.Produto;
+import entities.Circle;
+
+// import entities.Calculadora;
+// import entities.Produto;
 // import entities.Triangulo;
 
 public class App {
@@ -10,46 +12,51 @@ public class App {
         //private static final Scanner entrada = new Scanner(System.in);
         Scanner entrada = new Scanner(System.in);
         //2. classe PRODUTO
-        System.out.println("Informe o codigo do produto:");
-        int cp = entrada.nextInt();
-        entrada.nextLine();
-        System.out.println("Informe o nome do produto:");
-        String np = entrada.nextLine();
+        // System.out.println("Informe o codigo do produto:");
+        // int cp = entrada.nextInt();
+        // entrada.nextLine();
+        // System.out.println("Informe o nome do produto:");
+        // String np = entrada.nextLine();
 
-        Produto p = new Produto(cp, np);
-        System.out.println("Codigo do produto: " + p.getCodigo());
-        System.out.println("Nome do produto: " + p.getNome());
+        // Produto p = new Produto(cp, np);
+        // System.out.println("Codigo do produto: " + p.getCodigo());
+        // System.out.println("Nome do produto: " + p.getNome());
 
         // 3. classe CALCULADORA
-        System.out.println("Informe o 1º numero inteiro: ");
-        int a = entrada.nextInt();
-        System.out.println("Informe o 2º numero inteiro: ");
-        int b = entrada.nextInt();
+        // System.out.println("Informe o 1º numero inteiro: ");
+        // int a = entrada.nextInt();
+        // System.out.println("Informe o 2º numero inteiro: ");
+        // int b = entrada.nextInt();
 
-        Calculadora c = new Calculadora();
-        c.setA(a);
-        c.setB(b);
-        System.out.println("Soma: " + c.somar());
-        System.out.println("Subtração: " + c.subtrair());
-        System.out.println("Divisão: " + c.dividir());
-        System.out.println("Multiplicação: " + c.multiplicar());
+        // Calculadora c = new Calculadora();
+        // c.setA(a);
+        // c.setB(b);
+        // System.out.println("Soma: " + c.somar());
+        // System.out.println("Subtração: " + c.subtrair());
+        // System.out.println("Divisão: " + c.dividir());
+        // System.out.println("Multiplicação: " + c.multiplicar());
 
         //4. Array da classe Produtos
-        Produto produtos[] = new Produto[3];
-        for(int i=0; i < produtos.length; i++){
-            System.out.println("Informe o codigo do " + (i+1) +"º produto:");
-            int codigo = entrada.nextInt();
-            entrada.nextLine();
-            System.out.println("Informe o nome do " + (i+1) +"º produto:");
-            String nome = entrada.nextLine();
+        // Produto produtos[] = new Produto[3];
+        // for(int i=0; i < produtos.length; i++){
+        //     System.out.println("Informe o codigo do " + (i+1) +"º produto:");
+        //     int codigo = entrada.nextInt();
+        //     entrada.nextLine();
+        //     System.out.println("Informe o nome do " + (i+1) +"º produto:");
+        //     String nome = entrada.nextLine();
 
-            produtos[i] = new Produto(codigo, nome);
+        //     produtos[i] = new Produto(codigo, nome);
 
-        }
+        // }
 
-        for(Produto v : produtos){
-            System.out.println("Codigo: " + v.getCodigo() + " | Nome: " + v.getNome());
-        }
+        // for(Produto v : produtos){
+        //     System.out.println("Codigo: " + v.getCodigo() + " | Nome: " + v.getNome());
+        // }
+
+        Circle circulo = new Circle();
+        circulo.setRadius(4.9);
+        System.out.println(circulo.toString());
+
 
 
         entrada.close();

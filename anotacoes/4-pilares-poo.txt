@@ -1,0 +1,36 @@
+ABSTRAÇÃO --------------------------------------------------------------------------------------- 
+
+- A abstração é um dos 4 pilares da POO.
+- Significa: mostrar só o que importa e esconder os detalhes internos.
+- Não é sobre “como eu escondo” (isso é encapsulamento), mas “o que eu escolho mostrar/esconder”.
+- Exemplo na classe Produto.java:
+
+public int getCodigo() { return codigo; }
+public void setCodigo(int cod) { this.codigo = cod; }
+Quem usa a classe só enxerga esses métodos, sem saber como o atributo codigo tá guardado lá dentro.
+
+- Exemplo no mundo real:
+- Um carro: você só usa volante, pedal, marcha → não vê a mecânica toda acontecendo.
+- Uma TV: você só aperta “ligar/desligar” no controle → não sabe nem precisa saber da fiação interna.
+
+ENCAPSULAMENTO -----------------------------------------------------------------------------------
+
+- É a técnica de esconder os atributos (private) e controlar o acesso a eles.
+- Isso normalmente é feito com getters e setters, que podem ter regras de validação.
+- Exemplo na classe Calculadora.java:
+
+public void setA(int a){
+    if (a > 0){
+        this.a = a;
+    } else{
+        System.out.println("Valor inválido para A! Deve ser > 0.");
+        this.a = 0;
+    }
+}
+
+- Aqui tu não só escondeu o atributo, mas também impediu que valores inválidos 
+fossem jogados direto dentro da classe.
+-Resumo prático:
+- Abstração → visão simplificada, esconder complexidade.
+- Encapsulamento → esconder os dados, criar uma “blindagem” com acesso controlado.
+
