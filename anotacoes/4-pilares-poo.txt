@@ -34,3 +34,29 @@ fossem jogados direto dentro da classe.
 - Abstração → visão simplificada, esconder complexidade.
 - Encapsulamento → esconder os dados, criar uma “blindagem” com acesso controlado.
 
+HERANÇA ---------------------------------------------------------------------------------------------
+
+- Herança é um dos 4 pilares da POO.
+- Permite que uma classe filha reutilize atributos e métodos de uma classe pai.
+- A classe filha herda tudo que o pai tem (desde que não seja private) e pode:
+- Usar os métodos/atributos do pai.
+- Sobrescrever métodos do pai (@Override) para mudar o comportamento.
+- Adicionar atributos ou métodos próprios.
+
+class Produto { 
+    private String nome;
+    public void setNome(String n){ this.nome = n; }
+    public String getNome(){ return nome; }
+}
+
+class Livro extends Produto { 
+    private String autor;
+    public void setAutor(String a){ this.autor = a; }
+    public String getAutor(){ return autor; }
+}
+
+- Livro herda nome de Produto e ainda tem autor.
+- Um objeto Livro pode usar getNome() e getAutor().
+- Reuso de código = evita repetir atributos e métodos.
+- Especialização = a classe filha pode acrescentar coisas novas ou mudar comportamento
+

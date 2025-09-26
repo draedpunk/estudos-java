@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+import entities.Book;
 import entities.Circle;
 
 // import entities.Calculadora;
@@ -53,10 +54,12 @@ public class App {
         //     System.out.println("Codigo: " + v.getCodigo() + " | Nome: " + v.getNome());
         // }
 
-        Circle circulo = new Circle();
-        circulo.setRadius(4.9);
-        System.out.println(circulo.toString());
+        // Circle circulo = new Circle();
+        // circulo.setRadius(4.9);
+        // System.out.println(circulo.toString());
 
+        Book livro = new Book(1, "Kama Sutra", 369.24, 10, "Vatsyayana", "Editora 69");
+        System.out.println(livro.toString());
 
 
         entrada.close();
