@@ -24,10 +24,10 @@ public class Book extends Products {
         this.editor =e;
     }
 
-    public String toString() {
+    public String descricao() {
 
         return "Eu sou um livro de código " + getCode() + ", nome = "+getName()
-        + ", preço = " + getPrice() + ", desconto para pagamento a vista = "+getDiscount() + "%" + 
+        + ", preço = R$ " + getPrice() + ", desconto para pagamento a vista = "+getDiscount() + "%" + 
         " autor = "+ author + " e editora = " + editor;
         
     }

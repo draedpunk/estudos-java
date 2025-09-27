@@ -53,7 +53,7 @@ public class Products {
         }
     }
 
-    public String toString() {
+    public String descricao() {
 
         return "Eu sou um produto de código " + getCode() + ", nome = "+getName() + ", preço = " +getPrice() +
         " e desconto para pagamento a vista = "+getDiscount() + " %";

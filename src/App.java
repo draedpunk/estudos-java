@@ -1,7 +1,10 @@
 import java.util.Scanner;
 
 import entities.Book;
+import entities.CD;
 import entities.Circle;
+import entities.Products;
+import entities.Retangulo;
 
 // import entities.Calculadora;
 // import entities.Produto;
@@ -11,7 +14,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         //1. Operadores basicos de entrada e saida IO
         //private static final Scanner entrada = new Scanner(System.in);
-        Scanner entrada = new Scanner(System.in);
+        //Scanner entrada = new Scanner(System.in);
         //2. classe PRODUTO
         // System.out.println("Informe o codigo do produto:");
         // int cp = entrada.nextInt();
@@ -57,12 +60,34 @@ public class App {
         // Circle circulo = new Circle();
         // circulo.setRadius(4.9);
         // System.out.println(circulo.toString());
+        //Products produtos[] = new Products[3];
 
-        Book livro = new Book(1, "Kama Sutra", 369.24, 10, "Vatsyayana", "Editora 69");
-        System.out.println(livro.toString());
+        //Products produto = new Products(0, "Tinta Miss Colorful", 50.99, 15);
+        //System.out.println(produto.toString());
+
+        //Book livro = new Book(1, "O Corvo", 69.24, 10, "Edgar Alan Poe", "Darkside");
+        //System.out.println(livro.toString());
+
+        //CD cede = new CD(2, "Dude Ranch", 245.89, 5, "Blink-182", "Mark Trombino");
+        //System.out.println(cede.descricao());
+
+        // produtos[0] = produto;
+        // produtos[1] = livro;
+        // produtos[2] = cede;
+
+        // for(int i=0; i < produtos.length; i++){
+        //     System.out.println(produtos[i].descricao());
+        // }
 
 
-        entrada.close();
+        Retangulo r = new Retangulo(15.5, 35.2);
+        System.out.println(r.toString());
+
+        // for(Products v : produtos){
+        //     System.out.println(v.descricao());
+        // }
+
+        //entrada.close();
 
         // Triangulo t = new Triangulo();
         // double a1 = t.getAreaBaseAltura(8.0, 67.0);
