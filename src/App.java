@@ -3,6 +3,7 @@ import java.util.Scanner;
 import entities.Book;
 import entities.CD;
 import entities.Circle;
+import entities.Cliente;
 import entities.Products;
 import entities.Retangulo;
 
@@ -80,8 +81,18 @@ public class App {
         // }
 
 
-        Retangulo r = new Retangulo(15.5, 35.2);
-        System.out.println(r.toString());
+        // Retangulo r = new Retangulo(15.5, 35.2);
+        // System.out.println(r.toString());
+
+        // Cliente c = new Cliente(-1, null, null);
+        // System.out.println(c);
+
+        try {
+            Cliente c = new Cliente(-1, null, null);
+            System.out.println(c);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Erro ao criar cliente: " + e.getMessage());
+        }
 
         // for(Products v : produtos){
         //     System.out.println(v.descricao());
